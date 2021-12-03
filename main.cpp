@@ -2,9 +2,10 @@
 
 using namespace std;
 
-int f(int n){
+//integer function (fibo) with recursion to return the series.
+int fibo(int n){
     if (n>1) {
-        return f(n-1)+f(n-2);
+        return fibo(n-1)+fibo(n-2);
     }
     else if (n==1) return 1;
     else return 0;
@@ -18,7 +19,7 @@ int main(){
 
     cout<<"Fibonnaci Series : ";
     for (int i=0;i<=terms;i++){
-        cout<<f(i)<<" ";
+        cout<<fibo(i)<<" ";
     }
     cout<<endl;
     return 0;

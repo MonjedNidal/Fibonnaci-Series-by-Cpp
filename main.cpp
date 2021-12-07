@@ -17,7 +17,7 @@ int main(){
     cin >> terms;
 
     cout<<"Fibonnaci Series : ";
-    for (int i=0;i<=terms;i++){
+    for (int i=0;i<terms;i++){
         cout<<fibo(i)<<" ";
     }
     cout<<endl;
